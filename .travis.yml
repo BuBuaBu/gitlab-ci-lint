@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- '6'
+deploy:
+  provider: npm
+  email: henriet@bubuabu.org
+  api_key:
+    secure: KuOg6fZzJKoGNpGVxO25OGjAON53iLMECE2R6hEkrsXxJormi4GknDGcqnl5zz147ohILG1R/3iZp1HkN+3jPiVUzFA7+6g7dPaIXEvuPUnrOlgPr0JWgGLDpUn8Uvm0FC3q71ZbDub7nn8bxfH+BITP0J8mofM8k0QeOyO1gpxoGbUcVN3bgET0YFuWUv8siCEW3Bd0WwquepOa5fXcSFYWgFDAvob1eivNYj2lcK4MidzlUsNJcvVvtGVcBWJbuswi68wmp+VmhMIwALSR966Ri/BMfgJlxHkrQVpsDulRPiX9lQvD0PHzSnS+GeizcaTx29hpaFILwaNR8jDLqCxBR1GFLmQlJm7KlR3t/lyzIrIdATzPS3dGhcjpVLCDmeWpWTYMbsEIyGg8EpdABNBCdLQ4xuDtmxznucAGfVIPew0kmwcHl3t1/SB4x7uzj/b1msjIy4mNxCNOqcXumTGwAE500Ntfw32nSBg1kHtnwKaRq6ojS1URH7aQFm7wd29BZfR1O1lQBZDdOWl+2NH0sfzcxl4VX4J/sZ0HOucsrqIngsWNhv1WDYKDeyu3Tvkd8yv08VFWgug4eJzCtOv6sYolzU52oMOrEhYGNYfTpVxVCqkWt5bR/LUtj4SY0YEBB0nn9EGs+bzR3Q5F3QpECh4uMfkzUxBTxG0SwF8=
+  on:
+    tags: true
+    repo: BuBuaBu/gitlab-ci-lint

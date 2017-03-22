@@ -1,0 +1,8 @@
+.editorconfig
+.eslintrc.yml
+.gitattributes
+.idea
+.nyc_output
+.travis.yml
+test/*
+*.tgz

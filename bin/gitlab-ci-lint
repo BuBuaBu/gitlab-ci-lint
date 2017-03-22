@@ -1,0 +1,4 @@
+#! /usr/bin/env node
+
+require('babbybel')
+require('../lib/cli')

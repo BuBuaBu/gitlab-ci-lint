@@ -1,0 +1,50 @@
+{
+  "name": "gitlab-ci-lint",
+  "version": "0.0.0",
+  "description": "Gitlab-ci cli to lint .gitlab-ci.yml files",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BuBuaBu/gitlab-ci-lint.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "mocha -r babbybel",
+    "posttest": "npm run lint"
+  },
+  "bin": {
+    "gitlab-ci-lint": "bin/gitlab-ci-lint"
+  },
+  "keywords": [
+    "gitlab",
+    "gitlab-ci",
+    "lint",
+    ".gitlab-ci.yml"
+  ],
+  "author": "Vivien HENRIET",
+  "license": "ISC",
+  "dependencies": {
+    "babbybel": "^0.6.0",
+    "commander": "^2.9.0",
+    "mz": "^2.6.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0",
+    "standard": "^9.0.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "context",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect"
+    ]
+  }
+}

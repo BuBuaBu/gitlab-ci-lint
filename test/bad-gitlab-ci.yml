@@ -1,0 +1,5 @@
+job:
+  variables:
+    BOOLEAN_VAR: true
+  script:
+    - echo hello

@@ -1,0 +1,24 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+
+#indent_style = tab | space
+indent_size = 2
+max_line_length = 140
+
+[*.js]
+curly_bracket_next_line = false
+indent_brace_style = K&R
+indent_size = 2
+#spaces_around_operators = true | false | hybrid
+#spaces_around_brackets = none | inside | outside | both
+
+[*.xml]
+indent_style = space
+indent_size = 4
