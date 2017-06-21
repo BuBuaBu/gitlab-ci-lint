@@ -24,7 +24,7 @@
   "author": "Vivien HENRIET",
   "license": "ISC",
   "dependencies": {
-    "babbybel": "^0.6.0",
+    "babbybel": "^1.0.0",
     "commander": "^2.9.0",
     "mz": "^2.6.0",
     "request": "^2.81.0",
