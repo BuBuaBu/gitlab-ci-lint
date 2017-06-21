@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "standard",
-    "test": "mocha -r babbybel",
+    "test": "mocha -r babbybel --timeout 5000",
     "posttest": "npm run lint"
   },
   "bin": {
@@ -32,7 +32,7 @@
     "standard": "^10.0.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.0.0",
     "mocha": "^3.2.0"
   },
   "standard": {
