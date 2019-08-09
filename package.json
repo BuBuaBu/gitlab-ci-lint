@@ -25,7 +25,7 @@
   "license": "ISC",
   "dependencies": {
     "babbybel": "^1.0.0",
-    "commander": "^2.9.0",
+    "commander": "^3.0.0",
     "mz": "^2.6.0",
     "request": "^2.81.0",
     "request-promise": "^4.2.0",
