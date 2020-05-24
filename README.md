@@ -1,6 +1,6 @@
 # gitlab-ci-lint
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/BuBuaBu/gitlab-ci-lint.svg)](https://greenkeeper.io/)
+
 
 Gitlab-ci cli to lint .gitlab-ci.yml files
 
