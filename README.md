@@ -17,9 +17,10 @@ npm install -g gitlab-ci-lint
 
   Options:
 
-    -h, --help       output usage information
-    -V, --version    output the version number
-    -u, --url [URL]  Use alternative Gitlab URL
+    -h, --help            output usage information
+    -V, --version         output the version number
+    -u, --url [URL]       Use alternative Gitlab URL
+    -t, --token [TOKEN]   Provide Gitlab personal access token, when it's needed
 ```
 
 #### examples
@@ -33,16 +34,28 @@ gitlab-ci-lint
 gitlab-ci-lint <filename>
 ```
 
-* Alternative Gitlab url
+* Alternative Gitlab URL
 ```
 gitlab-ci-lint --url https://git.my.corp
 ```
 
-### API
+* With Gitlab personal access token
+```
+gitlab-ci-lint --token token-string-here123
+```
 
+### API
+* with `filename` param
 ```
 const gitlabCILint = require('gitlab-ci-lint')
 
 gitlabCILint.lintFile('.gitlab-ci.yml')
+  .then((result) => console.log(result))
+```
+* with `filename`, `baseURL` and `token` params, accordingly
+```
+const gitlabCILint = require('gitlab-ci-lint')
+
+gitlabCILint.lintFile('.gitlab-ci.yml', 'https://git.my.corp', 'token-string-here123')
   .then((result) => console.log(result))
 ```
