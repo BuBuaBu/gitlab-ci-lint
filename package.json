@@ -1,6 +1,6 @@
 {
   "name": "gitlab-ci-lint",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Gitlab-ci cli to lint .gitlab-ci.yml files",
   "repository": {
     "type": "git",
